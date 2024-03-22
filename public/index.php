@@ -1,20 +1,20 @@
 <?php
-session_start(); //Inicia a sessão
-//área de memória dentro do servidor
-//carrinho de compras, seus dados de conexão
-//qualquer variável que vc queira criar
-    //phpinfo();
-	include_once("visao/head.php");
-	include("visao/formulario.php");
-	
-    //include("visao/listar.php");
-	include_once("controle/ListarUsuario.php");
-	$index = new ListarUsuario();
+session_start();
+    if (!isset($_SESSION['username'])) {
+         include_once("visao/login.php");
+    } else {    
+
+    include_once("visao/head.php");
+    include("visao/formulario.php");
+    
+    include_once("controle/ListarUsuario.php");
+    $index = new ListarUsuario();
     include_once("visao/listar.php");
-	//atribuição de responsabilidade
-	//o controle sabe como exibir a lista de contatos
-	include_once("visao/footer.php");
+    
+    include_once("visao/footer.php");
+}
 ?>
+
 
 
 <!--<html lang="en">

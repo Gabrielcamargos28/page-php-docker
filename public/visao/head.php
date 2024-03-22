@@ -30,6 +30,8 @@
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#formulario">Formulario</a></li>
                     <li class="nav-item"><a class="nav-link" href="#listar">Listar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="usuario_route.php?fun=logout">Sair</a></li>
+
                 </ul>
             </div>
         </div>
